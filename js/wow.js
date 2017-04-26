@@ -18,6 +18,8 @@ $(document).ready(function() {
 	for(var i=1; i < guild.members.length;i++) {
 		if(guild.members[i].character.level === 110 && guild.members[i].rank <=5) {
 			$("#content").append(guild.members[i].character.name + "<br>");
+			if (guildDat.members[i].character.class === 8)
+				
 		}
 	}
 	
