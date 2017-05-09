@@ -1,11 +1,12 @@
 $(document).ready(function() {
 
-	function Get(url){
-		var Httpreq = new XMLHttpRequest();
-		Httpreq.open("GET",url,false);
-		Httpreq.send(null);
-		return Httpreq.responseText;
-	}
+	function creerRequeteCORS(methode, url) 
+{
+var xhr = new XMLHttpRequest();
+//Test pour savoir si l'objet XHR gère withCredentials, ce qui indique qu'il s'agit bien de la version 2 de XHR
+if (withCredentials in xhr) 
+{
+xhr.open(method, url, true);
 
 	//var apikey = "dphv5ptd7qhzpmhercyje6jamza64xe6";
 	//var server = "chogall";
