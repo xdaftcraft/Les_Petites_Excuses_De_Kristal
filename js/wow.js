@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	function creerRequeteCORS(methode, url) 
+	function Get(methode, url) 
 {
 var xhr = new XMLHttpRequest();
 //Test pour savoir si l'objet XHR gère withCredentials, ce qui indique qu'il s'agit bien de la version 2 de XHR
